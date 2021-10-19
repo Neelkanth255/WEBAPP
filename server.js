@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/user/register', register);
-app.use('/user/login', login);
+app.use('/user/authenticate', login);
 
 app.listen(PORT, () => {
   console.log(`Application running on Port ${PORT}`);
